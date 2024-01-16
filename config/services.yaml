@@ -1,0 +1,12 @@
+imports:
+  - { resource: index/* }
+
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  JoliCode\Elastically\Client:
+    arguments:
+      $config:
+        elastically_index_class_mapping: []

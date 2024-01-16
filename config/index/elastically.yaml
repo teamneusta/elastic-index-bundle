@@ -1,0 +1,5 @@
+services:
+
+  Neusta\ElasticBundle\Index\Elastically\IndexesRepository:
+    arguments:
+      $client: '@JoliCode\Elastically\Client'
