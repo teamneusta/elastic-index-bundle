@@ -6,6 +6,11 @@ services:
     autowire: true
     autoconfigure: true
 
+  # auto-register all commands as services
+  Neusta\ElasticIndexBundle\Command\:
+    resource: '../src/Command/*'
+    tags: [ 'console.command' ]
+
   JoliCode\Elastically\Client:
     arguments:
       $config:

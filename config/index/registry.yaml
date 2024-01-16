@@ -1,11 +1,11 @@
 services:
 
   neusta.elastic_bundle.registry.converter:
-    class: Neusta\ElasticBundle\Index\Registry\ObjectRegistry
+    class: Neusta\ElasticIndexBundle\Index\Registry\ObjectRegistry
     arguments:
       $name: 'converter'
 
   neusta.elastic_bundle.registry.repository:
-    class: Neusta\ElasticBundle\Index\Registry\ObjectRegistry
+    class: Neusta\ElasticIndexBundle\Index\Registry\ObjectRegistry
     arguments:
       $name: 'repository'

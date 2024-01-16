@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-use Neusta\ElasticBundle\NeustaElasticIndexBundle;
+use Neusta\ElasticIndexBundle\NeustaElasticIndexBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
 use Symfony\Component\HttpKernel\Kernel;

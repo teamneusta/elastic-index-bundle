@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Neusta\ElasticBundle;
+namespace Neusta\ElasticIndexBundle;
 
 use Neusta\ElasticIndexBundle\DependencyInjection\Compiler\ConverterRegistryPass;
 use Neusta\ElasticIndexBundle\DependencyInjection\Compiler\RepositoryRegistryPass;

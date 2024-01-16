@@ -5,15 +5,13 @@ namespace Neusta\ElasticIndexBundle\DependencyInjection;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader;
-use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
+use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
-final class NeustaElasticIndexExtension extends ConfigurableExtension
+final class NeustaElasticIndexExtension extends Extension
 {
-    protected function loadInternal(array $mergedConfig, ContainerBuilder $container): void  // @phpstan-ignore-line
+    public function load(array $configs, ContainerBuilder $container): void  // @phpstan-ignore-line
     {
         $loader = new Loader\YamlFileLoader($container, new FileLocator(\dirname(__DIR__, 2) . '/config'));
         $loader->load('services.yaml');
-
-        $container->setParameter('neusta_elastic.elasticsearch_hosts', $mergedConfig['hosts']);
     }
 }
