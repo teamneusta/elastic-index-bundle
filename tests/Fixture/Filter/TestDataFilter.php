@@ -7,18 +7,11 @@ use Neusta\ElasticIndexBundle\Index\Data\Filter\DataFilter;
 
 class TestDataFilter implements DataFilter
 {
-
-    /**
-     * @inheritDoc
-     */
     public function filter(DataCollection $elements): iterable
     {
         return $elements;
     }
 
-    /**
-     * @inheritDoc
-     */
     public function filterOne(object $element): ?object
     {
         return null;

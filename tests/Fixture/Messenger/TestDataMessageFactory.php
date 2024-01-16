@@ -7,10 +7,6 @@ use Neusta\ElasticIndexBundle\Index\Data\Messenger\DataMessageFactory;
 
 class TestDataMessageFactory implements DataMessageFactory
 {
-
-    /**
-     * @inheritDoc
-     */
     public function create(object $object): DataMessage
     {
         return new DataMessage($object);

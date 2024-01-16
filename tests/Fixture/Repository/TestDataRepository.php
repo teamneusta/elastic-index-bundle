@@ -7,10 +7,6 @@ use Neusta\ElasticIndexBundle\Index\Data\DataRepository;
 
 class TestDataRepository implements DataRepository
 {
-
-    /**
-     * @inheritDoc
-     */
     public function findAll(): DataCollection
     {
         // TODO: Implement findAll() method.
