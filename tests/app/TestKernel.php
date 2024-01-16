@@ -3,6 +3,7 @@
 use Neusta\ElasticBundle\NeustaElasticIndexBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait;
+use Symfony\Component\HttpKernel\Kernel;
 
 class TestKernel extends Kernel
 {
