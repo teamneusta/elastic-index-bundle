@@ -1,0 +1,13 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+
+  Neusta\ElasticIndexBundle\Index\Data\DataRepository:
+    class: Neusta\ElasticIndexBundle\Tests\Fixture\Repository\TestDataRepository
+
+  Neusta\ElasticIndexBundle\Index\Data\Filter\DataFilter:
+    class: Neusta\ElasticIndexBundle\Tests\Fixture\Filter\TestDataFilter
+
+  Neusta\ElasticIndexBundle\Index\Data\Messenger\DataMessageFactory:
+    class: Neusta\ElasticIndexBundle\Tests\Fixture\Messenger\TestDataMessageFactory
